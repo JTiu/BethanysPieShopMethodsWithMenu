@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MenuOptions.cs" />
+    <Compile Include="PieShopCustomer.cs" />
     <Compile Include="PieShopDimensions.cs" />
     <Compile Include="PieShopOperations_Pie_Production.cs" />
     <Compile Include="EmployeeWage.cs" />

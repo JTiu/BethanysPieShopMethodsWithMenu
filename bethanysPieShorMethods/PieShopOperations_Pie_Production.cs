@@ -14,7 +14,7 @@ namespace BethanysPieShopMethods
             int months = 6;
             PieShopOperations_Pie_Production this2 = new PieShopOperations_Pie_Production();
             Console.WriteLine($"multiply two variables to get pie production: {piesPerMonth * months}");
-            Console.ReadLine();
+            
             
         }
     }

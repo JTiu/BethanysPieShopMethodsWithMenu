@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BethanysPieShopMethods
 {
@@ -16,13 +12,13 @@ namespace BethanysPieShopMethods
             Console.WriteLine("The Custom List Menu");
             Console.WriteLine("------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("1. User Story #1");
-            Console.WriteLine("2. User Story #2");
-            Console.WriteLine("3. User Story #3");
-            Console.WriteLine("4. User Story #4");
-            Console.WriteLine("5. User Story #5");
-            Console.WriteLine("6. User Story #6");
-            Console.WriteLine("7. User Story #7");
+            Console.WriteLine("1. yearly wage");
+            Console.WriteLine("2. pie production");
+            Console.WriteLine("3. facility cubic feet");
+            Console.WriteLine("4. facility sq feet");
+            Console.WriteLine("5. customer name");
+            Console.WriteLine("6. customer address");
+            Console.WriteLine("7. previous order");
 
             bool invalidEntry = true; //this bool insures that an invalid entry is not entered
             string result = "";
@@ -52,7 +48,7 @@ namespace BethanysPieShopMethods
 
             if (isNumeric == true)
             {
-                if (number < 8 && number > 0)
+                if (number < 19 && number > 0)
                 {
                     return true;
                 }
@@ -75,18 +71,36 @@ namespace BethanysPieShopMethods
                 case 1:
                     EmployeeWage switchCaseObject = new EmployeeWage();
                     switchCaseObject.CalculateYearlyWage();
+                    Console.ReadLine();
                     break;
                 case 2:
                     PieShopOperations_Pie_Production something = new PieShopOperations_Pie_Production();
                     something.Pie_Production();
+                    Console.ReadLine();
                     break;
                 case 3:
                     PieShopDimensions cubicFootage = new PieShopDimensions();
                     cubicFootage.PieShopCubicFootage();
+                    Console.ReadLine();
                     break;
                 case 4:
                     PieShopDimensions sqFootage = new PieShopDimensions();
-                   sqFootage.PieShopSquareFootage();
+                    sqFootage.PieShopSquareFootage();
+                    Console.ReadLine();
+                    break;
+                case 5:
+                    PieShopCustomer getName = new PieShopCustomer();
+                    getName.GetShopCustomerName();
+                    Console.ReadLine();
+                    break;
+                case 6:
+                    PieShopCustomer getAddress = new PieShopCustomer();
+                    getAddress.GetShopCustomerAddress();
+                    Console.ReadLine();
+                    break;
+                case 7:
+                    PieShopCustomer getPreviousOrders = new PieShopCustomer();
+                    getPreviousOrders.GetShopCustomerPreviousOrders();
                     Console.ReadLine();
                     break;
                 default:

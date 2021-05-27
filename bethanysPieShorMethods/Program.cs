@@ -14,7 +14,7 @@ namespace BethanysPieShopMethods
             int optionPicked;
             optionPicked = startMenu.DrawMenu(); //
 
-            while (optionPicked != 7)
+            while (optionPicked != 19)
             {
                 Console.Clear();
                 startMenu.DirectUser(optionPicked);
